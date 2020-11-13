@@ -1,0 +1,12 @@
+{
+  "formLayout": "top",
+  "labelCol": 88,
+  "widgetSize": "default",
+  "formPadding": {
+    "top": 16,
+    "right": 24,
+    "bottom": 16,
+    "left": 24
+  },
+  "isPrint": false
+}

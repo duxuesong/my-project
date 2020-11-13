@@ -1,0 +1,22 @@
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "ant-design-vue": "^1.6.5",
+    "core-js": "^2.6.11",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {},
+  "description": "## Build Setup",
+  "main": "nuxt.config.js",
+  "author": "",
+  "license": "ISC"
+}

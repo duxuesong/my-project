@@ -1,0 +1,489 @@
+{
+  "basicComponents": [{
+      "type": "input",
+      "name": "输入框",
+      "icon": "icon-input",
+      "validateRule":[
+        {"label":"identity_card", "value":"身份证"},
+        {"label":"phone", "value":"手机号"},
+        {"label":"email", "value":"电子邮箱"},
+        {"label":"bank_account", "value":"银行账户"},
+        {"label":"postal_code", "value":"邮政编码"},
+        {"label":"numbers_and_letters", "value":"数字和字母"},
+        {"label":"numbers", "value":"数字"},
+        {"label":"letters", "value":"字母"},
+        {"label":"integer", "value":"整数"},
+        {"label":"money", "value":"金额(两位小数)"},
+        {"label":"url", "value":"网址"},
+        {"label":"chinese_characters", "value":"汉字"}
+      ],
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "输入框",
+        "placeholder": "",
+        "validate":"",
+        "apiKey": "",
+        "formWidth": 100,
+        "initialValue": "",
+        "actionConfig": {
+          "readOnly": false
+        },
+        "isRequired": false,
+        "isProjectName": false
+      }
+    },
+    {
+      "type": "select",
+      "name": "选择器",
+      "icon": "icon-xialakuang1",
+      "isRequired": true,
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "选择器",
+        "placeholder": "请选择",
+        "apiKey": "",
+        "formWidth": 100,
+        "multiple": false,
+        "showSearch": false,
+        "dataType": "static",
+        "actionConfig": {
+          "readOnly": false
+        },
+        "defaultValue": "0",
+        "options": [{
+            "label": "男",
+            "value": "0"
+          },
+          {
+            "label": "女",
+            "value": "1"
+          }
+        ],
+        "isRequired": false
+      }
+    },
+    {
+      "type": "textArea",
+      "name": "多行文本",
+      "icon": "icon-diy-com-textarea",
+      "placeholder": "请输入",
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "多行文本",
+        "placeholder": "",
+        "apiKey": "",
+        "formWidth": 100,
+        "initialValue": "",
+        "minRows": 1,
+        "maxRows": 3
+      }
+    },
+    {
+      "type": "inputNumber",
+      "name": "计数器",
+      "icon": "icon-jishuqi",
+      "isRequired": true,
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "计数器",
+        "placeholder": "请输入",
+        "apiKey": "",
+        "formWidth": 100,
+        "initialValue": "",
+        "max": 200,
+        "min": 0,
+        "step": 1,
+        "precision": 0,
+        "widgetSize": "",
+        "isRequired": false
+      }
+    },
+    {
+      "type": "radio",
+      "name": "单选框组",
+      "icon": "icon-radio",
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "单选框组",
+        "apiKey": "",
+        "formWidth": 100,
+        "buttonStyle": "dot",
+        "dataType": "static",
+        "defaultValue": 1,
+        "options": [{
+            "label": "选项1",
+            "value": 0
+          },
+          {
+            "label": "选项2",
+            "value": 1
+          },
+          {
+            "label": "选项3",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "type": "checkBox",
+      "name": "多选框组",
+      "icon": "icon-checked-square",
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "多选框组",
+        "apiKey": "",
+        "formWidth": 100,
+        "dataType": "static",
+        "defaultValue": [1],
+        "options": [{
+            "label": "选项1",
+            "value": 1
+          },
+          {
+            "label": "选项2",
+            "value": 2
+          },
+          {
+            "label": "选项3",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "type": "timePicker",
+      "name": "时间选择器",
+      "icon": "icon-time1",
+      "isRequired": true,
+      "dateData": [{
+          "id": 1,
+          "label": "h:mm:ss",
+          "value": "时:分:秒"
+        },
+        {
+          "id": 2,
+          "label": "h:mm",
+          "value": "时:分"
+        },
+        {
+          "id": 3,
+          "label": "h",
+          "value": "时"
+        }
+      ],
+      "form": {
+        "isCanConfigAuth": true,
+        "format": "h:mm:ss",
+        "label": "时间选择器",
+        "placeholder": "请选择",
+        "apiKey": "",
+        "formWidth": 100
+      }
+    },
+    {
+      "type": "datePicker",
+      "name": "日期选择器",
+      "icon": "icon-Date",
+      "isRequired": true,
+      "dateType": [{
+          "label": "date",
+          "value": "标准日期"
+        },
+        {
+          "label": "month",
+          "value": "月"
+        },
+        {
+          "label": "dateRange",
+          "value": "日期范围"
+        }
+      ],
+      "dateData": [{
+          "label": "YYYY-MM-DD HH:mm:ss",
+          "value": "年-月-日 时:分:秒"
+        },
+        {
+          "label": "YYYY-MM-DD",
+          "value": "年-月-日"
+        },
+        {
+          "label": "YYYY-MM",
+          "value": "年-月"
+        }
+      ],
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "日期选择器",
+        "format": "YYYY-MM-DD",
+        "pickerType": "date",
+        "apiKey": "",
+        "formWidth": 100
+      }
+    },
+    {
+      "type": "switch",
+      "name": "开关",
+      "icon": "icon-switch",
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "开关",
+        "apiKey": "",
+        "formWidth": 100
+      }
+    },
+    {
+      "type": "button",
+      "name": "按钮",
+      "icon": "icon-anniu1",
+      "buttonData": [{
+          "id": 1,
+          "label": "primary",
+          "value": "主按钮"
+        },
+        {
+          "id": 2,
+          "label": "",
+          "value": "次按钮"
+        },
+        {
+          "id": 3,
+          "label": "dashed",
+          "value": "虚线按钮"
+        },
+        {
+          "id": 3,
+          "label": "danger",
+          "value": "危险按钮"
+        }
+      ],
+      "form": {
+        "isCanConfigAuth": true,
+        "apiKey": "",
+        "initialValue": "按钮",
+        "buttonType": "primary"
+      }
+    }
+  ],
+  "imgComponents": [{
+      "type": "uploadFile",
+      "name": "文件上传",
+      "icon": "icon-up-load",
+      "fileType": [{
+          "id": 1,
+          "label": "jpg",
+          "value": ".jpg"
+        },
+        {
+          "id": 2,
+          "label": "png",
+          "value": ".png"
+        },
+        {
+          "id": 3,
+          "label": "jpeg",
+          "value": ".jpeg"
+        },
+        {
+          "id": 4,
+          "label": "pdf",
+          "value": ".pdf"
+        },
+        {
+          "id": 5,
+          "label": "doc",
+          "value": ".doc"
+        },
+        {
+          "id": 6,
+          "label": "docx",
+          "value": ".docx"
+        },
+        {
+          "id": 7,
+          "label": "xls",
+          "value": ".xls"
+        },
+        {
+          "id": 8,
+          "label": "xlsx",
+          "value": ".xlsx"
+        }
+      ],
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "文件上传",
+        "apiKey": "",
+        "formWidth": 100,
+        "checkedList": [".jpg", ".png", ".jpeg", ".pdf", ".xlsx", ".xls", ".doc", ".docx"]
+      }
+    },
+    {
+      "type": "uploadPicture",
+      "name": "照片墙",
+      "icon": "icon-picture1",
+      "fileType": [{
+          "id": 1,
+          "label": "jpg",
+          "value": ".jpg"
+        },
+        {
+          "id": 2,
+          "label": "png",
+          "value": ".png"
+        },
+        {
+          "id": 3,
+          "label": "jpeg",
+          "value": ".jpeg"
+        }
+      ],
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "照片墙",
+        "apiKey": "",
+        "formWidth": 100,
+        "checkedList": [".jpg", ".png", ".jpeg"]
+      }
+    },
+    {
+      "type": "cascader",
+      "name": "省市区级联",
+      "icon": "icon-11fuhao-jilianxuanze",
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "省市区级联",
+        "placeholder": "请选择",
+        "apiKey": "",
+        "formWidth": 100,
+        "initialValue": ""
+      }
+    },
+    {
+      "type": "inputCode",
+      "name": "编码生成器",
+      "icon": "icon-bianma",
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "编码",
+        "apiKey": "",
+        "encoderCode": "",
+        "btnContent": "生成"
+      }
+    },
+    {
+      "type": "tab",
+      "name": "选项卡",
+      "icon": "icon-TAB",
+      "positionData": [{
+          "value": "上",
+          "label": "top"
+        },
+        {
+          "value": "右",
+          "label": "right"
+        },
+        {
+          "value": "下",
+          "label": "bottom"
+        },
+        {
+          "value": "左",
+          "label": "left"
+        }
+      ],
+      "styleData": [{
+          "value": "线",
+          "label": "line"
+        },
+        {
+          "value": "卡片",
+          "label": "card"
+        }
+      ],
+      "children": [],
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "选项卡",
+        "tabPosition": "top",
+        "type": "line",
+        "defaultValue": "1",
+        "options": [{
+            "label": "Tab 1",
+            "value": "1"
+          },
+          {
+            "label": "Tab 2",
+            "value": "2"
+          },
+          {
+            "label": "tab 3",
+            "value": "3"
+          }
+        ]
+      }
+    },
+    {
+      "type": "staticText",
+      "name": "文本",
+      "icon": "icon-text13",
+      "value": "文本",
+      "style": {
+        "textAlign": "center",
+        "fontsize": 14,
+        "fontSize": "14px",
+        "color": "#333333",
+        "fontWeight": "bold"
+      },
+      "form": {
+        "isCanConfigAuth": true,
+        "label": "这里是一段文本",
+        "apiKey": "",
+        "formWidth": 100
+      }
+    },
+    {
+      "type": "divider",
+      "name": "分隔线",
+      "icon": "icon-fengexian5",
+      "form": {
+        "isCanConfigAuth": true,
+        "orientation": "center",
+        "text": "",
+        "dashed": "false"
+      }
+    }
+  ],
+  "assistComponents": [{
+      "type": "grid",
+      "name": "栅格布局",
+      "icon": "icon-Grid2",
+      "form": {
+        "gutter": 10,
+        "col": "12",
+        "apiKey": ""
+      },
+      "children": [
+
+      ]
+    },
+    {
+      "type": "table",
+      "name": "表格组件",
+      "icon": "icon-table5",
+      "form": {
+        "apiKey": "",
+        "options": [{
+            "label": "列头"
+          },
+          {
+            "label": "列头"
+          }
+        ]
+      },
+      "children": [
+
+      ]
+    }
+  ]
+}
